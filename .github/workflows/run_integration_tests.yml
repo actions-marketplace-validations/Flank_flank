@@ -116,7 +116,7 @@ jobs:
         shell: bash
 
       - name: Gradle integration tests
-        uses: eskatos/gradle-command-action@v1.3.3
+        uses: eskatos/gradle-command-action@v2
         id: run-it
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
