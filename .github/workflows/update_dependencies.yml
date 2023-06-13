@@ -26,7 +26,7 @@ jobs:
           private_key: ${{ secrets.FLANK_RELEASE_PRIVATE_KEY }}
 
       - name: Gradle dependency updates raport
-        uses: eskatos/gradle-command-action@v1
+        uses: eskatos/gradle-command-action@v2
         with:
           arguments: dependencyUpdates -DoutputFormatter=json -DoutputDir=.
 
